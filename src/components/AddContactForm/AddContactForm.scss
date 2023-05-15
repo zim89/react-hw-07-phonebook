@@ -1,0 +1,48 @@
+@import 'styles/shared.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__input {
+    border: 1.5px solid #78909c;
+    border-radius: 4px;
+    padding: 8px 12px;
+
+    &--error {
+      border-color: $red-accent;
+    }
+  }
+
+  &__btn {
+    @extend %button;
+    padding: 8px 20px;
+    border-radius: 4px;
+    background-color: #0c6dfd;
+    color: #fafafa;
+    font-weight: 500;
+    transition: all 250ms linear;
+
+    &:hover {
+      background-color: #198753;
+    }
+  }
+}
+
+.error-message {
+  color: $red-accent;
+  padding: 0 4px;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  background-color: white;
+  font-size: 14px;
+}

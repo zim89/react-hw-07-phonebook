@@ -1,0 +1,21 @@
+@import 'styles/shared.scss';
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &__label {
+    font-size: 16px;
+  }
+
+  &__input {
+    border: 1.5px solid #78909c;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 16px;
+  }
+}
